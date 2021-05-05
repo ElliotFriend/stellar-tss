@@ -1,4 +1,4 @@
-org: tyvdh
+org: elliotfriend
 app: tss-serverless
 service: tss-serverless
 
@@ -12,8 +12,8 @@ provider:
   name: aws
   runtime: nodejs12.x
   environment:
-    turretBaseUrl: 'https://tss-wrangler.tyler.workers.dev'
-    turretSigner: GB4OYM7TQTJSROWXHOJLKAX2IJ2QN4I6S6GCJH4MGWVTAO5Q5DPNADXX
+    turretBaseUrl: 'https://tss-wrangler.elliotfriend.workers.dev/'
+    turretSigner: GB52GDQ52PIVAN275DRLHNYQ2CTE2B6FY7G5O3CCBAHWML7RMHGDXVB2
   tracing:
     lambda: true
   iamRoleStatements:
@@ -28,7 +28,7 @@ functions:
     handler: dist/app.default
     maximumRetryAttempts: 0
     maximumRecordAgeInSeconds: 60
-    provisionedConcurrency: 4 # If you're not on a paid plan with AWS you'll need to comment this line out, otherwise you'll get an RunLambdaEvConf error
+    #provisionedConcurrency: 4 # If you're not on a paid plan with AWS you'll need to comment this line out, otherwise you'll get an RunLambdaEvConf error
     memorySize: 256
     timeout: 8
     events:
@@ -39,7 +39,7 @@ functions:
             allowedOrigins:
               - ${self:provider.environment.turretBaseUrl}
             allowedHeaders:
-              - Content-Type 
+              - Content-Type
               - X-Turret-Data
               - X-Turret-Signature
             allowedMethods:

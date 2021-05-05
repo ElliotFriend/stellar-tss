@@ -1,12 +1,12 @@
 name = "tss-wrangler"
 type = "webpack"
 webpack_config = "webpack.config.js"
-account_id = "dfd716443bca4859850dd27a6f885a60"
+account_id = "55a455451769ef2794dcfb1aa0115d1e"
 workers_dev = true
 kv_namespaces = [
-   { binding = "META", id = "239e6a0c4c8d47569eb202278fd99e58" },
-   { binding = "TX_FUNCTIONS", id = "bb7ba59b38e040bbab7d71dfdb826911" },
-   { binding = "TX_FEES", id = "bc666162fd1c44f0b22c605e14c07597" },
-   { binding = "TX_SPONSORS", id = "01269d925c44431aaab92c31307e8599" }
+   { binding = "META", id = "466f87d466b34201a021a43954d1bd9d" },
+   { binding = "TX_FUNCTIONS", id = "b70e4bfac67342aa99e67050b85b76e4" },
+   { binding = "TX_FEES", id = "33650cbcc1de4454a225db15f04e6deb" },
+   { binding = "TX_SPONSORS", id = "6a5bd25c3b384a388f067e11b8a486bc" }
 ]
-vars = { STELLAR_NETWORK = "TESTNET", HORIZON_URL = "https://horizon-testnet.stellar.org", TURRET_ADDRESS = "GB4OYM7TQTJSROWXHOJLKAX2IJ2QN4I6S6GCJH4MGWVTAO5Q5DPNADXX", TURRET_RUN_URL = "https://ylorcf18ii.execute-api.us-east-1.amazonaws.com", XLM_FEE_MIN = 1, XLM_FEE_MAX = 10, UPLOAD_DIVISOR = 1000, RUN_DIVISOR = 100000 }
+vars = { STELLAR_NETWORK = "TESTNET", HORIZON_URL = "https://horizon-testnet.stellar.org", TURRET_ADDRESS = "GB52GDQ52PIVAN275DRLHNYQ2CTE2B6FY7G5O3CCBAHWML7RMHGDXVB2", TURRET_RUN_URL = "https://fk8anzaixg.execute-api.us-east-1.amazonaws.com/", XLM_FEE_MIN = 1, XLM_FEE_MAX = 10, UPLOAD_DIVISOR = 1000, RUN_DIVISOR = 100000 }
